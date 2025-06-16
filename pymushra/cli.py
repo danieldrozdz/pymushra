@@ -6,7 +6,7 @@ from . import service, casting
 
 
 @click.group()
-@click.option('--webmushra-path', '-w', default="/home/webmushra")
+@click.option('--webmushra-path', '-w', default="/home/webMUSHRA")
 @click.option('--db-path', '-d', default="db/webmushra.json")
 @click.pass_context
 def cli(ctx, webmushra_path, db_path):
