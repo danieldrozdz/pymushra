@@ -17,8 +17,8 @@ def cli(ctx, webmushra_path, db_path):
 
 
 @cli.command()
-@click.option('--port', '-p', default=5000)
-@click.option('--admin-allow', '-a', default=["127.0.0.1"], multiple=True)
+@click.option('--port', '-p', default=8000)
+@click.option('--admin-allow', '-a', default=["0.0.0.0"], multiple=True)
 @click.pass_context
 def server(ctx, port, admin_allow):
     service.app.config['webmushra_dir'] = os.path.join(
